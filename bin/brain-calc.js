@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getRandomInt(num = 10) {
+function getRandomInt(num = 100) {
   return Math.floor(Math.random() * num, 10);
 }
 
 function getRandomSym(sym = '+-*') {
-  return sym[getRandomInt(2)];
+  return sym[getRandomInt(3)];
 }
 
 function calculationAnswer(firstNum, randomSym, secondNum) {
