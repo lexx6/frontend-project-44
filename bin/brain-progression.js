@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getRandomArbitrary(min, max) {
+function getRandomArbitrary(min = 0, max = 1) {
   return Math.floor(Math.random() * (max - min) + min, 10);
 }
 

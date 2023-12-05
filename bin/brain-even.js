@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getRandomInt() { // функция возвращает рандомное целое число
-  return Math.floor(Math.random() * 1000, 10);
+function getRandomArbitrary(min = 0, max = 1) {
+  return Math.floor(Math.random() * (max - min) + min, 10);
 }
 
-function isEvenOdd(num) { // функция возвращает результат четное (even) или нечетное (odd) число
+function isEvenOdd(num) {
   if (num % 2 === 0) return 'even';
   return 'odd';
 }
 
-function correctAnswer(evenOdd) { // функция возвращает правильный ответ
+function correctAnswer(evenOdd) {
   if (evenOdd === 'even') return 'yes';
   return 'no';
 }
@@ -21,7 +21,7 @@ console.log(`Hello, ${name}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 for (let i = 0; i < 3; i += 1) {
-  const num = getRandomInt();
+  const num = getRandomArbitrary(1, 20);
   const evenOdd = isEvenOdd(num);
   console.log(`Question: ${num}`);
   const answer = readlineSync.question('Your answer: ');

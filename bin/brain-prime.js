@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-function getRandomInt() {
-  return Math.floor(Math.random() * 100, 10);
+function getRandomArbitrary(min = 0, max = 1) {
+  return Math.floor(Math.random() * (max - min) + min, 10);
 }
 
 function isPrime(num) {
   if (num <= 1) {
     return false;
   }
-  // eslint-disable-next-line no-plusplus
-  for (let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+  for (let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i += 1) {
     if (num % i === 0) {
       return 'noPrime';
     }
@@ -29,7 +28,7 @@ console.log(`Hello, ${name}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 0; i < 3; i += 1) {
-  const num = getRandomInt();
+  const num = getRandomArbitrary(1, 20);
   const primeOdd = isPrime(num);
   console.log(`Question: ${num}`);
   const answer = readlineSync.question('Your answer: ');
