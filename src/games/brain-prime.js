@@ -1,21 +1,7 @@
 import readlineSync from 'readline-sync';
 import greating from '../lib/greating.js';
-
-function getRandomArbitrary(min = 0, max = 1) {
-  return Math.floor(Math.random() * (max - min) + min, 10);
-}
-
-function isPrime(num) {
-  if (num <= 1) {
-    return false;
-  }
-  for (let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i += 1) {
-    if (num % i === 0) {
-      return 'noPrime';
-    }
-  }
-  return 'prime';
-}
+import getRandomArbitrary from '../lib/randomArbitrary.js';
+import isPrime from '../lib/prime.js';
 
 function correctAnswer(primeOdd) {
   if (primeOdd === 'prime') return 'yes';

@@ -1,14 +1,7 @@
 import readlineSync from 'readline-sync';
 import greating from '../lib/greating.js';
-
-function getRandomArbitrary(min = 0, max = 1) {
-  return Math.floor(Math.random() * (max - min) + min, 10);
-}
-
-function isEvenOdd(num) {
-  if (num % 2 === 0) return 'even';
-  return 'odd';
-}
+import getRandomArbitrary from '../lib/randomArbitrary.js';
+import isEvenOdd from '../lib/evenOdd.js';
 
 function correctAnswer(evenOdd) {
   if (evenOdd === 'even') return 'yes';

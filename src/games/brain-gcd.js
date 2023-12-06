@@ -1,14 +1,7 @@
 import readlineSync from 'readline-sync';
 import greating from '../lib/greating.js';
-
-function getRandomArbitrary(min = 0, max = 1) {
-  return Math.floor(Math.random() * (max - min) + min, 10);
-}
-
-function gcd(firstNum, secondNum) {
-  if (!secondNum) return firstNum;
-  return gcd(secondNum, firstNum % secondNum);
-}
+import getRandomArbitrary from '../lib/randomArbitrary.js';
+import gcd from '../lib/gcd.js';
 
 function run() {
   const name = greating();
