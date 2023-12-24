@@ -134,20 +134,20 @@
 │   │   ├── ./src/games/brain-gcd.js
 │   │   ├── ./src/games/brain-prime.js
 │   │   └── ./src/games/brain-progression.js
-│   ├── ./src/lib # Библиотеки основных функций
-│   │   ├── ./src/lib/calculation.js
-│   │   ├── ./src/lib/engine.js # Основной алгоритм игр
-│   │   ├── ./src/lib/evenOdd.js
-│   │   ├── ./src/lib/gcd.js
-│   │   ├── ./src/lib/greating.js
-│   │   ├── ./src/lib/prime.js
-│   │   ├── ./src/lib/randomArbitrary.js
-│   │   └── ./src/lib/randomSym.js
-│   └── ./src/cli.js
+│   └── ./src/lib # Библиотеки основных функций
+│       ├── ./src/lib/calculation.js
+│       ├── ./src/lib/engine.js # Основной алгоритм игр
+│       ├── ./src/lib/evenOdd.js
+│       ├── ./src/lib/gcd.js
+│       ├── ./src/lib/greating.js
+│       ├── ./src/lib/prime.js
+│       ├── ./src/lib/randomArbitrary.js
+│       └── ./src/lib/randomSym.js
 ├── ./Makefile
 ├── ./README.md
+├── ./logo.svg
 ├── ./package-lock.json
-├── ./package.json # npm зависимости
+└── ./package.json # npm зависимости
 ```
 
 ## Лицензия
