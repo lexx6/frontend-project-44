@@ -1,5 +1,5 @@
 <p align="center"> 
-    <img width="150" src="https://github.com/lexx6/frontend-project-44/blob/main/logo.svg">
+    <img width="400" src="https://github.com/lexx6/frontend-project-44/blob/main/logo.svg">
 </p>
 
 # Brain-games
