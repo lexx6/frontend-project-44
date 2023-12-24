@@ -1,3 +1,7 @@
+<p align="center"> 
+    <img width="150" src="https://github.com/lexx6/frontend-project-44/blob/main/logo.svg">
+</p>
+
 # Brain-games
 
 <p align="center"> 
@@ -151,3 +155,5 @@
 Лицензия MIT.
 
 Copyright (c) 2023 Rakityanskiy Ilya
+
+<a href="https://ru.freepik.com/free-vector/blue-brain-background_884409.htm#query=%D0%BC%D0%BE%D0%B7%D0%B3&position=11&from_view=search&track=sph&uuid=6a1a1049-910d-45a5-91cb-5cbe5adfa0a1">Изображение в начале README от Harryarts</a> на Freepik
