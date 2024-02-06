@@ -3,7 +3,6 @@
       viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" width="400">
     <g>
       <rect style="fill:#FFFFFF;" width="100" height="100"/>
-      
         <radialGradient id="SVGID_1_" cx="16936.3613" cy="-363.5094" r="10.2312" gradientTransform="matrix(-0.0049 -0.3467 2.946 -0.0358 1216.4512 5939.1338)" gradientUnits="userSpaceOnUse">
         <stop  offset="0" style="stop-color:#000000"/>
         <stop  offset="0.0074" style="stop-color:#090909"/>
