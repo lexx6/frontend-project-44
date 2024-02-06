@@ -1,14 +1,14 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
 import start from '../lib/engine.js';
 
-const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
+const RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const questionAnswer = () => {
-  const num = getRandomArbitrary(1, 20);
-  const answer = num % 2 === 0 ? 'yes' : 'no';
-  return [num, answer];
+const getQuestionAnswer = () => {
+  const number = getRandomArbitrary(1, 20);
+  const answer = number % 2 === 0 ? 'yes' : 'no';
+  return [number, answer];
 };
 
-const run = () => start(RULES, questionAnswer);
+const run = () => start(RULE, getQuestionAnswer);
 
 export default run;
