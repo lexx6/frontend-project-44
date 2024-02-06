@@ -18,7 +18,7 @@ function buildQuestion() {
 
 function qna() {
   const arr = buildQuestion();
-  const randomPosition = getRandomArbitrary(1, arr.length);
+  const randomPosition = getRandomArbitrary(1, arr.length - 1);
   const answer = arr[randomPosition];
   arr[randomPosition] = '..';
   return [`Question: ${arr.join(' ')}`, answer];
