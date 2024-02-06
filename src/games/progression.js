@@ -16,7 +16,7 @@ function buildQuestion() {
   return result;
 }
 
-function qna() {
+function questionAnswer() {
   const arr = buildQuestion();
   const randomPosition = getRandomArbitrary(1, arr.length - 1);
   const answer = arr[randomPosition];
@@ -24,6 +24,6 @@ function qna() {
   return [`Question: ${arr.join(' ')}`, answer];
 }
 
-const run = () => start(RULES, qna, TRIES);
+const run = () => start(RULES, questionAnswer, TRIES);
 
 export default run;
