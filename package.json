@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "description": "Первый проект курса Frontend-разработка Hexlet. Brain-games - Набор консольных математических игр для начальных проверок знаний по математике. Каждая игра знакомится с пользователем по имени, задает определенный математический вопрос, пользователю требуется дать 3 правильных ответа подряд. В случае ошибки игра останавливается и нужно начать игру заного.",
   "bin": {
-    "brain-games": "src/games.js",
-    "brain-even": "src/even.js",
-    "brain-calc": "src/calc.js",
-    "brain-gcd": "src/gcd.js",
-    "brain-progression": "src/progression.js",
-    "brain-prime": "src/prime.js"
+    "brain-games": "bin/games.js",
+    "brain-even": "bin/even.js",
+    "brain-calc": "bin/calc.js",
+    "brain-gcd": "bin/gcd.js",
+    "brain-progression": "bin/progression.js",
+    "brain-prime": "bin/prime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
