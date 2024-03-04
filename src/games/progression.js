@@ -14,11 +14,10 @@ const generateProgression = (from, step, count) => {
 };
 
 const getQuestionAnswer = () => {
-  const progression = generateProgression(
-    getRandomArbitrary(1, 100),
-    getRandomArbitrary(10, 50),
-    getRandomArbitrary(5, 10),
-  );
+  const from = getRandomArbitrary(1, 100);
+  const step = getRandomArbitrary(10, 50);
+  const count = getRandomArbitrary(5, 10);
+  const progression = generateProgression(from, step, count);
   const randomPosition = getRandomArbitrary(1, progression.length - 1);
   const answer = progression[randomPosition];
   progression[randomPosition] = '..';
