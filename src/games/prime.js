@@ -14,9 +14,9 @@ const isPrime = (number) => {
 };
 
 const getQuestionAnswer = () => {
-  const num = getRandomArbitrary(2, 20);
-  const answer = isPrime(num) ? 'yes' : 'no';
-  return [num, answer];
+  const number = getRandomArbitrary(2, 20);
+  const answer = isPrime(number) ? 'yes' : 'no';
+  return [number, answer];
 };
 
 const run = () => start(description, getQuestionAnswer);
