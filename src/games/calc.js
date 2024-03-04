@@ -1,7 +1,7 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
 import start from '../engine.js';
 
-const RULE = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const calculate = (number1, symbol, number2) => {
   switch (symbol) {
@@ -24,6 +24,6 @@ const getQuestionAnswer = () => {
   return [`${number1} ${symbol} ${number2}`, answer];
 };
 
-const run = () => start(RULE, getQuestionAnswer);
+const run = () => start(description, getQuestionAnswer);
 
 export default run;

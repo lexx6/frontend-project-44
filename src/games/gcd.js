@@ -1,7 +1,7 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
 import start from '../engine.js';
 
-const RULE = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (number1, number2) => {
   if (!number2) return number1;
@@ -15,6 +15,6 @@ const getQuestionAnswer = () => {
   return [`${number1} ${number2}`, answer];
 };
 
-const run = () => start(RULE, getQuestionAnswer);
+const run = () => start(description, getQuestionAnswer);
 
 export default run;

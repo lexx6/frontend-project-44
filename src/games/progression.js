@@ -1,7 +1,7 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
 import start from '../engine.js';
 
-const RULE = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const generateProgression = (from, step, count) => {
   const result = [];
@@ -25,6 +25,6 @@ const getQuestionAnswer = () => {
   return [progression.join(' '), answer];
 };
 
-const run = () => start(RULE, getQuestionAnswer);
+const run = () => start(description, getQuestionAnswer);
 
 export default run;
