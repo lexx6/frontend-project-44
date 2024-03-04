@@ -19,7 +19,8 @@ const calculate = (number1, symbol, number2) => {
 const getQuestionAnswer = () => {
   const number1 = getRandomArbitrary(1, 20);
   const number2 = getRandomArbitrary(1, 20);
-  const symbol = ['+', '-', '*'].at(getRandomArbitrary(0, 2));
+  const symbols = ['+', '-', '*'];
+  const symbol = symbols.at(getRandomArbitrary(0, symbols.length - 1));
   const answer = calculate(number1, symbol, number2).toString();
   return [`${number1} ${symbol} ${number2}`, answer];
 };
