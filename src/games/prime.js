@@ -1,5 +1,5 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
-import start from '../lib/engine.js';
+import start from '../engine.js';
 
 const RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

@@ -1,5 +1,5 @@
 import getRandomArbitrary from '../lib/randomArbitrary.js';
-import start from '../lib/engine.js';
+import start from '../engine.js';
 
 const RULE = 'What number is missing in the progression?';
 
