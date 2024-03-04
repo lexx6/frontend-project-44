@@ -12,7 +12,7 @@ const calculate = (number1, symbol, number2) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Unknown symbol!');
+      throw new Error(`Unknown symbol: ${symbol}`);
   }
 };
 
